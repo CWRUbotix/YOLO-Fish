@@ -1,4 +1,14 @@
 # YOLO-Fish
+## Usage
+ 1. Install/compile [DarkNet](https://github.com/hank-ai/darknet)
+ 2. Install/compile [DarkHelp](https://github.com/stephanecharette/DarkHelp)
+ 3. Compile and run this project (see [example_scripts.sh](example_scripts.sh) for examples):
+
+```bash
+. build.sh
+build/darkhelp_images models/trained_on_merge/yolo-fish-2.cfg weights/merge_yolo-fish-2.weights fish.names test/images
+```
+
 ## A Robust Fish Detection Model to Detect Fish in Realistic Underwater Environment.
 ### Accepted At Ecological Informatics [[Paper]](https://www.sciencedirect.com/science/article/abs/pii/S1574954122002977)
 ![Model Architecture](model_architecture.jpg)
