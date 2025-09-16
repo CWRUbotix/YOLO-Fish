@@ -20,6 +20,6 @@ FIND_LIBRARY (DARKNET	darknet	)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
 add_executable(darkhelp_video darkhelp_video.cpp)
-add_executable(darkhelp_to_roboflow darkhelp_to_roboflow.cpp)
+add_executable(darkhelp_images darkhelp_images.cpp)
 target_link_libraries(darkhelp_video Threads::Threads ${DARKHELP} ${DARKNET} ${OpenCV_LIBS})
-target_link_libraries(darkhelp_to_roboflow Threads::Threads ${DARKHELP} ${DARKNET} ${OpenCV_LIBS})
+target_link_libraries(darkhelp_images Threads::Threads ${DARKHELP} ${DARKNET} ${OpenCV_LIBS})
